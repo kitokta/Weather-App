@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather App</title>
-</head>
-<body>
+  </head>
+  <body>
+    <header>Seu aplicativo de clima favorito!</header>
     
-</body>
-<script src="index.js"></script>
+      <div id="content-box"></div>
+      <form autocomplete="off" action="GET" id="form">
+        <div id="search-box">
+          <input
+            type="text"
+            id="weather-search"
+            placeholder="Escreva aqui sua cidade"
+          />
+        </div>
+        <button id="fetch">Buscar</button>
+      </form>
+    
+  </body>
 </html>
