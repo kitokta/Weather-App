@@ -2,33 +2,6 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./modules/weather.js":
-/*!****************************!*\
-  !*** ./modules/weather.js ***!
-  \****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ Weather)
-/* harmony export */ });
-class Weather {
-    constructor (temperature, feelsLike, tempMin, tempMax, humidity, pressure, description, icon, name, country) {
-        this.Nome = name;
-        this.Pais = country;
-        this.Temperatura = temperature;
-        this.Sensacao = feelsLike;
-        this.TempMin = tempMin;
-        this.TempMax = tempMax;
-        this.Humidade = humidity;
-        this.Pressao = pressure;
-        this.Descricao = description;
-        this.Icon = icon;
-    }
-}
-
-/***/ }),
-
 /***/ "./node_modules/css-loader/dist/cjs.js!./styles/main.css":
 /*!***************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./styles/main.css ***!
@@ -49,7 +22,7 @@ __webpack_require__.r(__webpack_exports__);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap);"]);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: 'Lato', sans-serif;\n}\nbody {\n    display: grid;\n    grid-template-columns: 1fr 5fr;\n    grid-template-rows: 1fr 5fr;\n    background-color: #21D4FD;\n    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);\n    height: 100vh;\n}\n\n\nheader {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    grid-column: 2;\n    grid-row: 0/1;\n    font-size: 2.5em;\n    color: #fff;\n}\n\nform {\n    grid-row: 1/2;\n    grid-column: 1/2;\n    align-self: start;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 1em;\n    margin-top: 5em;\n    width: 90%;\n    justify-self: center;\n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);\n}\n\n#fetch {\n    width: 7.5em;\n    height: 3.3em;\n    padding: 1em;\n    text-align: center;\n    background-color: #0093E9;\n    background-image: linear-gradient(160deg, #0093E9, #80D0C7, #0093E9 );\n    background-size: 250%;\n    background-position: left;\n    transition: 300ms background-position ease-in-out;\n    border: 1px solid #0093E9;\n    border-radius: 18px;\n    color: #fff;\n    font-weight: bolder;\n    font-size: 1em;\n    \n}\n\n#fetch:hover {\n    background-position: right;\n}\n\n#weather-search {\n    border-radius: 10px;\n    height: 3em;\n    width: 100%;\n    padding: 1em;\n    color: black;\n    font-weight: bold;\n    font-size: 1em;\n}\n\n#content-box {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    \n   \n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);\n}\n\n.weather-box {\n    display: flex;\n    gap: 3em;\n}\n\n.icon-box {\n    height: 100px;\n    width: 100px;\n}\n\n.description-box {\n    display: flex;\n    flex-direction: column;\n}", "",{"version":3,"sources":["webpack://./styles/main.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,+BAA+B;AACnC;AACA;IACI,aAAa;IACb,8BAA8B;IAC9B,2BAA2B;IAC3B,yBAAyB;IACzB,kEAAkE;IAClE,aAAa;AACjB;;;AAGA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,cAAc;IACd,aAAa;IACb,gBAAgB;IAChB,WAAW;AACf;;AAEA;IACI,aAAa;IACb,gBAAgB;IAChB,iBAAiB;IACjB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;IACR,eAAe;IACf,UAAU;IACV,oBAAoB;IACpB,yBAAyB;IACzB,kEAAkE;AACtE;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,YAAY;IACZ,kBAAkB;IAClB,yBAAyB;IACzB,qEAAqE;IACrE,qBAAqB;IACrB,yBAAyB;IACzB,iDAAiD;IACjD,yBAAyB;IACzB,mBAAmB;IACnB,WAAW;IACX,mBAAmB;IACnB,cAAc;;AAElB;;AAEA;IACI,0BAA0B;AAC9B;;AAEA;IACI,mBAAmB;IACnB,WAAW;IACX,WAAW;IACX,YAAY;IACZ,YAAY;IACZ,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,uBAAuB;;;IAGvB,yBAAyB;IACzB,kEAAkE;AACtE;;AAEA;IACI,aAAa;IACb,QAAQ;AACZ;;AAEA;IACI,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: 'Lato', sans-serif;\n}\nbody {\n    display: grid;\n    grid-template-columns: 1fr 5fr;\n    grid-template-rows: 1fr 5fr;\n    background-color: #21D4FD;\n    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);\n    height: 100vh;\n}\n\n\nheader {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    grid-column: 2;\n    grid-row: 0/1;\n    font-size: 2.5em;\n    color: #fff;\n}\n\nform {\n    grid-row: 1/2;\n    grid-column: 1/2;\n    align-self: start;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 1em;\n    margin-top: 5em;\n    width: 90%;\n    justify-self: center;\n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);\n}\n\n#fetch {\n    width: 7.5em;\n    height: 3.3em;\n    padding: 1em;\n    text-align: center;\n    background-color: #0093E9;\n    background-image: linear-gradient(160deg, #0093E9, #80D0C7, #0093E9 );\n    background-size: 250%;\n    background-position: left;\n    transition: 300ms background-position ease-in-out;\n    border: 1px solid #0093E9;\n    border-radius: 18px;\n    color: #fff;\n    font-weight: bolder;\n    font-size: 1em;\n    \n}\n\n#fetch:hover {\n    background-position: right;\n}\n\n#weather-search {\n    border-radius: 10px;\n    height: 3em;\n    width: 100%;\n    padding: 1em;\n    color: black;\n    font-weight: bold;\n    font-size: 1em;\n}\n\n#content-box {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    \n   \n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);\n}\n\n.weather-box {\n    display: flex;\n    gap: 3em;\n}\n\n.icon-box {\n    height: 100px;\n    width: 100px;\n}\n\n.description-box {\n    display: flex;\n    flex-direction: column;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: 'Lato', sans-serif;\n}\nbody {\n    display: grid;\n    grid-template-columns: 1fr 5fr;\n    grid-template-rows: 1fr 5fr;\n    background-color: #21D4FD;\n    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);\n    height: 100vh;\n    background-size: 200%;\n    animation: gradient 15s ease infinite;\n}\n\n\nheader {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    grid-column: 2;\n    grid-row: 0/1;\n    font-size: 2.5em;\n    color: #fff;\n}\n\nform {\n    grid-row: 2;\n    grid-column: 1/2;\n    align-self: start;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 1em;\n    width: 90%;\n    justify-self: center;\n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 40%, #E0C3FC 100%);\n    height: 100%;\n    width: 100%;\n    padding: 1em;\n}\n\n#fetch {\n    width: 7.5em;\n    height: 3.3em;\n    padding: 1em;\n    text-align: center;\n    background-color: #0093E9;\n    background-image: linear-gradient(160deg, #0093E9, #80D0C7, #0093E9 );\n    background-size: 250%;\n    background-position: left;\n    transition: 300ms background-position ease-in-out;\n    border: 1px solid #0093E9;\n    border-radius: 18px;\n    color: #fff;\n    font-weight: bolder;\n    font-size: 1em;\n    \n}\n\n#fetch:hover {\n    background-position: right;\n}\n\n#weather-search {\n    border-radius: 10px;\n    height: 3em;\n    width: 100%;\n    padding: 1em;\n    color: black;\n    font-weight: bold;\n    font-size: 1em;\n}\n\n#content-box {\n    padding: 1em;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    grid-row: 1/2;\n    grid-column: 1 / 2;\n    height: 100%;\n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);\n    background-size: 200%;\n    animation: gradient 8s ease infinite;\n}\n\n@keyframes gradient {\n    0%{background-position:0% 50%}\n    50%{background-position:100% 50%}\n    100%{background-position:0% 50%}\n}\n\n\n.weather-box {\n    display: flex;\n    gap: 3em;\n}\n\n.icon-box {\n    height: 100px;\n    width: 100px;\n}\n\n.description-box {\n    display: flex;\n    flex-direction: column;\n}\n\nsection {\n    display: flex;\n    gap: 3em;\n    grid-column: 1 / 2;\n    grid-row: 2;\n}", "",{"version":3,"sources":["webpack://./styles/main.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,+BAA+B;AACnC;AACA;IACI,aAAa;IACb,8BAA8B;IAC9B,2BAA2B;IAC3B,yBAAyB;IACzB,kEAAkE;IAClE,aAAa;IACb,qBAAqB;IACrB,qCAAqC;AACzC;;;AAGA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,cAAc;IACd,aAAa;IACb,gBAAgB;IAChB,WAAW;AACf;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,iBAAiB;IACjB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;IACR,UAAU;IACV,oBAAoB;IACpB,yBAAyB;IACzB,mEAAmE;IACnE,YAAY;IACZ,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,YAAY;IACZ,kBAAkB;IAClB,yBAAyB;IACzB,qEAAqE;IACrE,qBAAqB;IACrB,yBAAyB;IACzB,iDAAiD;IACjD,yBAAyB;IACzB,mBAAmB;IACnB,WAAW;IACX,mBAAmB;IACnB,cAAc;;AAElB;;AAEA;IACI,0BAA0B;AAC9B;;AAEA;IACI,mBAAmB;IACnB,WAAW;IACX,WAAW;IACX,YAAY;IACZ,YAAY;IACZ,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,mBAAmB;IACnB,uBAAuB;IACvB,aAAa;IACb,kBAAkB;IAClB,YAAY;IACZ,yBAAyB;IACzB,kEAAkE;IAClE,qBAAqB;IACrB,oCAAoC;AACxC;;AAEA;IACI,GAAG,0BAA0B;IAC7B,IAAI,4BAA4B;IAChC,KAAK,0BAA0B;AACnC;;;AAGA;IACI,aAAa;IACb,QAAQ;AACZ;;AAEA;IACI,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,QAAQ;IACR,kBAAkB;IAClB,WAAW;AACf","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: 'Lato', sans-serif;\n}\nbody {\n    display: grid;\n    grid-template-columns: 1fr 5fr;\n    grid-template-rows: 1fr 5fr;\n    background-color: #21D4FD;\n    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);\n    height: 100vh;\n    background-size: 200%;\n    animation: gradient 15s ease infinite;\n}\n\n\nheader {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    grid-column: 2;\n    grid-row: 0/1;\n    font-size: 2.5em;\n    color: #fff;\n}\n\nform {\n    grid-row: 2;\n    grid-column: 1/2;\n    align-self: start;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 1em;\n    width: 90%;\n    justify-self: center;\n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 40%, #E0C3FC 100%);\n    height: 100%;\n    width: 100%;\n    padding: 1em;\n}\n\n#fetch {\n    width: 7.5em;\n    height: 3.3em;\n    padding: 1em;\n    text-align: center;\n    background-color: #0093E9;\n    background-image: linear-gradient(160deg, #0093E9, #80D0C7, #0093E9 );\n    background-size: 250%;\n    background-position: left;\n    transition: 300ms background-position ease-in-out;\n    border: 1px solid #0093E9;\n    border-radius: 18px;\n    color: #fff;\n    font-weight: bolder;\n    font-size: 1em;\n    \n}\n\n#fetch:hover {\n    background-position: right;\n}\n\n#weather-search {\n    border-radius: 10px;\n    height: 3em;\n    width: 100%;\n    padding: 1em;\n    color: black;\n    font-weight: bold;\n    font-size: 1em;\n}\n\n#content-box {\n    padding: 1em;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    grid-row: 1/2;\n    grid-column: 1 / 2;\n    height: 100%;\n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);\n    background-size: 200%;\n    animation: gradient 8s ease infinite;\n}\n\n@keyframes gradient {\n    0%{background-position:0% 50%}\n    50%{background-position:100% 50%}\n    100%{background-position:0% 50%}\n}\n\n\n.weather-box {\n    display: flex;\n    gap: 3em;\n}\n\n.icon-box {\n    height: 100px;\n    width: 100px;\n}\n\n.description-box {\n    display: flex;\n    flex-direction: column;\n}\n\nsection {\n    display: flex;\n    gap: 3em;\n    grid-column: 1 / 2;\n    grid-row: 2;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -556,6 +529,166 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/modules/UI.js":
+/*!***************************!*\
+  !*** ./src/modules/UI.js ***!
+  \***************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ UI)
+/* harmony export */ });
+/* harmony import */ var _assets_free_icon_1_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/free_icon_1.svg */ "./src/assets/free_icon_1.svg");
+/* harmony import */ var _assets_humidity_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/humidity.svg */ "./src/assets/humidity.svg");
+/* harmony import */ var _assets_wind_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/wind.svg */ "./src/assets/wind.svg");
+
+
+
+
+class UI {
+    static loadData(todayWeather) {
+        const contentBox = document.getElementById("content-box");
+        if (document.getElementById("old-weather")) {
+          const oldWeather = document.getElementById("old-weather");
+          contentBox.removeChild(oldWeather);
+        }
+        const weatherBox = document.createElement("div");
+        weatherBox.classList.add("weather-box");
+        weatherBox.setAttribute("id", "old-weather");
+        const descriptionBox = document.createElement("div");
+        descriptionBox.classList.add("description-box");
+      
+        //declaring and getting img url
+        const icon = document.createElement("img");
+        icon.src = todayWeather.Icon;
+        const iconBox = document.createElement("div");
+        iconBox.classList.add("icon-box");
+        iconBox.appendChild(icon);
+      
+        //declaring and getting weather description
+        const description = document.createElement("h1");
+        description.innerHTML = todayWeather.Descricao.toUpperCase();
+        descriptionBox.appendChild(description);
+      
+        //declaring and getting tempData
+        const temp = document.createElement("h2");
+        const tempMin = document.createElement("h3");
+        const tempMax = document.createElement("h3");
+        temp.innerHTML = `${todayWeather.Temperatura} °C`;
+        tempMin.innerHTML = `Min: ${todayWeather.TempMin} °C`;
+        tempMax.innerHTML = `Max: ${todayWeather.TempMax} °C`;
+        descriptionBox.appendChild(temp);
+        descriptionBox.appendChild(tempMin);
+        descriptionBox.appendChild(tempMax);
+      
+        //appending everything
+        weatherBox.appendChild(iconBox);
+        weatherBox.appendChild(descriptionBox);
+        contentBox.appendChild(weatherBox);
+
+        //header
+        const header = document.getElementsByTagName("header")[0];
+        header.innerHTML = `${todayWeather.Nome} - ${todayWeather.Pais}`;
+
+        
+
+      }
+      
+      static defaultLoad() {
+        const contentBox = document.getElementById("content-box");
+        if(contentBox.innerHTML!= '') {
+          contentBox.removeChild(contentBox.firstChild);
+        }
+        const icon = document.createElement("img");
+        icon.setAttribute("id", "firstIcon");
+        icon.src = "https://openweathermap.org/img/wn/02d@2x.png";
+        icon.style.height = "8em";
+        icon.style.width = "8em";
+        contentBox.appendChild(icon);
+
+        //section content
+        const section = document.getElementsByTagName('section')[0];
+        const dataBox = document.createElement('div');
+        dataBox.classList.add('data-box');
+        section.appendChild(dataBox);
+        const windIcon = document.createElement('img');
+        const humidityIcon = document.createElement('img');
+        const sensationIcon = document.createElement('img');
+        sensationIcon.src = _assets_free_icon_1_svg__WEBPACK_IMPORTED_MODULE_0__;
+        humidityIcon.src = _assets_humidity_svg__WEBPACK_IMPORTED_MODULE_1__;
+        windIcon.src = _assets_wind_svg__WEBPACK_IMPORTED_MODULE_2__;
+        const sensationDiv = document.createElement('div');
+        const humidityDiv = document.createElement('div');
+        const windDiv = document.createElement('div');
+        sensationDiv.appendChild(sensationIcon);
+        humidityDiv.appendChild(humidityIcon);
+        windDiv.appendChild(windIcon);
+        dataBox.appendChild(sensationDiv);
+        dataBox.appendChild(humidityDiv);
+        dataBox.appendChild(windDiv);
+      }
+}
+
+/***/ }),
+
+/***/ "./src/modules/weather.js":
+/*!********************************!*\
+  !*** ./src/modules/weather.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ Weather)
+/* harmony export */ });
+class Weather {
+    constructor (temperature, feelsLike, tempMin, tempMax, humidity, wind, description, icon, name, country) {
+        this.Nome = name;
+        this.Pais = country;
+        this.Temperatura = temperature;
+        this.Sensacao = feelsLike;
+        this.TempMin = tempMin;
+        this.TempMax = tempMax;
+        this.Humidade = humidity;
+        this.Vento = wind * 3.6;
+        this.Descricao = description;
+        this.Icon = icon;
+    }
+}
+
+/***/ }),
+
+/***/ "./src/assets/free_icon_1.svg":
+/*!************************************!*\
+  !*** ./src/assets/free_icon_1.svg ***!
+  \************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "free_icon_1.svg";
+
+/***/ }),
+
+/***/ "./src/assets/humidity.svg":
+/*!*********************************!*\
+  !*** ./src/assets/humidity.svg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "humidity.svg";
+
+/***/ }),
+
+/***/ "./src/assets/wind.svg":
+/*!*****************************!*\
+  !*** ./src/assets/wind.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "wind.svg";
+
 /***/ })
 
 /******/ 	});
@@ -609,6 +742,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -625,6 +770,26 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -638,15 +803,18 @@ var __webpack_exports__ = {};
   !*** ./src/index.js ***!
   \**********************/
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _modules_weather_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../modules/weather.js */ "./modules/weather.js");
+/* harmony import */ var _modules_weather_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modules/weather.js */ "./src/modules/weather.js");
 /* harmony import */ var _styles_main_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/main.css */ "./styles/main.css");
+/* harmony import */ var _modules_UI_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./modules/UI.js */ "./src/modules/UI.js");
+
+
 
 
 const button = document.getElementById("fetch");
 const toSearch = document.getElementById("weather-search");
 
 window.addEventListener("load", () => {
-  defaultLoad();
+  _modules_UI_js__WEBPACK_IMPORTED_MODULE_2__["default"].defaultLoad();
 });
 
 button.addEventListener("click", (e) => {
@@ -660,7 +828,7 @@ button.addEventListener("click", (e) => {
   const keyword = toSearch.value;
   getData(keyword).then((res) => {
     const todayWeather = res;
-    loadData(todayWeather);
+    _modules_UI_js__WEBPACK_IMPORTED_MODULE_2__["default"].loadData(todayWeather);
   });
 });
 
@@ -681,7 +849,7 @@ async function getData(location) {
     weatherData.main.temp_min,
     weatherData.main.temp_max,
     weatherData.main.humidity,
-    weatherData.main.pressure,
+    weatherData.wind.speed,
     weatherData.weather[0].description,
     icon,
     weatherData.name,
@@ -697,67 +865,11 @@ async function getData(location) {
         err.style.marginBottom = '100px'
         const contentBox = document.getElementById('content-box');
         contentBox.appendChild(err);
-        setTimeout(() => {defaultLoad()}, 1000);
+        setTimeout(() => {_modules_UI_js__WEBPACK_IMPORTED_MODULE_2__["default"].defaultLoad()}, 1000);
     }
 }
 
-function loadData(todayWeather) {
-  const contentBox = document.getElementById("content-box");
-  if (document.getElementById("old-weather")) {
-    const oldWeather = document.getElementById("old-weather");
-    contentBox.removeChild(oldWeather);
-  }
-  const weatherBox = document.createElement("div");
-  weatherBox.classList.add("weather-box");
-  weatherBox.setAttribute("id", "old-weather");
-  const descriptionBox = document.createElement("div");
-  descriptionBox.classList.add("description-box");
 
-  //declaring and getting img url
-  const icon = document.createElement("img");
-  icon.src = todayWeather.Icon;
-  const iconBox = document.createElement("div");
-  iconBox.classList.add("icon-box");
-  iconBox.appendChild(icon);
-
-  //declaring and getting weather description
-  const description = document.createElement("h1");
-  description.innerHTML = todayWeather.Descricao.toUpperCase();
-  descriptionBox.appendChild(description);
-
-  //declaring and getting tempData
-  const temp = document.createElement("h2");
-  const tempMin = document.createElement("h3");
-  const tempMax = document.createElement("h3");
-  temp.innerHTML = `${todayWeather.Temperatura} °C`;
-  tempMin.innerHTML = `Min: ${todayWeather.TempMin} °C`;
-  tempMax.innerHTML = `Max: ${todayWeather.TempMax} °C`;
-  descriptionBox.appendChild(temp);
-  descriptionBox.appendChild(tempMin);
-  descriptionBox.appendChild(tempMax);
-
-  //appending everything
-  weatherBox.appendChild(iconBox);
-  weatherBox.appendChild(descriptionBox);
-  contentBox.appendChild(weatherBox);
-
-  //header
-  const header = document.getElementsByTagName("header")[0];
-  header.innerHTML = `${todayWeather.Nome} - ${todayWeather.Pais}`;
-}
-
-function defaultLoad() {
-  const contentBox = document.getElementById("content-box");
-  if(contentBox.innerHTML!= '') {
-    contentBox.removeChild(contentBox.firstChild);
-  }
-  const icon = document.createElement("img");
-  icon.setAttribute("id", "firstIcon");
-  icon.src = "https://openweathermap.org/img/wn/02d@2x.png";
-  icon.style.height = "8em";
-  icon.style.width = "8em";
-  contentBox.appendChild(icon);
-}
 })();
 
 /******/ })()

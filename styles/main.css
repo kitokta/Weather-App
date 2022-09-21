@@ -112,3 +112,40 @@ form {
     display: flex;
     flex-direction: column;
 }
+
+section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 3em;
+    grid-column: 2;
+    grid-row: 2;
+    justify-content: center;
+}
+
+.data-box {
+    padding: 1.2em;
+    height: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12em;
+    
+}
+
+#sensation-div,
+#humidity-div,
+#wind-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 5em;
+    width: 10em;
+}
+
+.data-box img {
+    height: 4em;
+    width: 4em;
+}
