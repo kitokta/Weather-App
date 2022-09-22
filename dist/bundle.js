@@ -696,7 +696,7 @@ class UI {
     else header.classList.add("cloud-bg");
   }
 
-  static defaultLoad() {
+  static defaultLoad(todayWeather) {
     const contentBox = document.getElementById("content-box");
     if (contentBox.innerHTML != "") {
       contentBox.removeChild(contentBox.firstChild);
@@ -704,30 +704,30 @@ class UI {
 
     //section content
     const section = document.getElementsByTagName("section")[0];
-    if (section.innerHTML != "") {
-      section.removeChild(section.firstChild);
+
+    if (!document.getElementById("sensation-div")) {
+      const dataBox = document.createElement("div");
+      dataBox.classList.add("data-box");
+      section.appendChild(dataBox);
+      const windIcon = document.createElement("img");
+      const humidityIcon = document.createElement("img");
+      const sensationIcon = document.createElement("img");
+      sensationIcon.src = _assets_sensation_svg__WEBPACK_IMPORTED_MODULE_0__;
+      humidityIcon.src = _assets_humidity_svg__WEBPACK_IMPORTED_MODULE_1__;
+      windIcon.src = _assets_wind_svg__WEBPACK_IMPORTED_MODULE_2__;
+      const sensationDiv = document.createElement("div");
+      sensationDiv.setAttribute("id", "sensation-div");
+      const humidityDiv = document.createElement("div");
+      humidityDiv.setAttribute("id", "humidity-div");
+      const windDiv = document.createElement("div");
+      windDiv.setAttribute("id", "wind-div");
+      sensationDiv.appendChild(sensationIcon);
+      humidityDiv.appendChild(humidityIcon);
+      windDiv.appendChild(windIcon);
+      dataBox.appendChild(sensationDiv);
+      dataBox.appendChild(humidityDiv);
+      dataBox.appendChild(windDiv);
     }
-    const dataBox = document.createElement("div");
-    dataBox.classList.add("data-box");
-    section.appendChild(dataBox);
-    const windIcon = document.createElement("img");
-    const humidityIcon = document.createElement("img");
-    const sensationIcon = document.createElement("img");
-    sensationIcon.src = _assets_sensation_svg__WEBPACK_IMPORTED_MODULE_0__;
-    humidityIcon.src = _assets_humidity_svg__WEBPACK_IMPORTED_MODULE_1__;
-    windIcon.src = _assets_wind_svg__WEBPACK_IMPORTED_MODULE_2__;
-    const sensationDiv = document.createElement("div");
-    sensationDiv.setAttribute("id", "sensation-div");
-    const humidityDiv = document.createElement("div");
-    humidityDiv.setAttribute("id", "humidity-div");
-    const windDiv = document.createElement("div");
-    windDiv.setAttribute("id", "wind-div");
-    sensationDiv.appendChild(sensationIcon);
-    humidityDiv.appendChild(humidityIcon);
-    windDiv.appendChild(windIcon);
-    dataBox.appendChild(sensationDiv);
-    dataBox.appendChild(humidityDiv);
-    dataBox.appendChild(windDiv);
   }
 
   static deleteData(toDelete) {
@@ -745,6 +745,10 @@ class UI {
       const oldWeather = document.getElementById("old-weather");
       const contentBox = document.getElementById("content-box");
       contentBox.removeChild(oldWeather);
+    } else if (toDelete === "err") {
+      const err = document.getElementById("err");
+      const form = document.getElementById("form");
+      form.removeChild(err);
     }
   }
 }
@@ -1095,16 +1099,26 @@ async function getData(location) {
     console.log(todayWeather);
     return todayWeather;
   } catch {
+    if(!document.getElementById('err')) {
     const err = document.createElement("h1");
     err.style.color = "red";
     err.innerHTML = "Erro ao procurar cidade";
     err.style.marginBottom = "100px";
-    const contentBox = document.getElementById("content-box");
-    contentBox.appendChild(err);
+    err.setAttribute("id", "err");
+    const form = document.getElementById("form");
+    form.appendChild(err);
+  }
 
     setTimeout(() => {
+      setTimeout(() => {
+        getData("brasilia").then((res) => {
+          const todayWeather = res;
+          _modules_UI_js__WEBPACK_IMPORTED_MODULE_2__["default"].loadData(todayWeather);
+        });
+      }, 1);
+      _modules_UI_js__WEBPACK_IMPORTED_MODULE_2__["default"].deleteData("err");
       _modules_UI_js__WEBPACK_IMPORTED_MODULE_2__["default"].defaultLoad();
-    }, 1000);
+    }, 1100);
   }
 }
 
