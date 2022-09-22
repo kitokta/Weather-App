@@ -95,12 +95,22 @@ form {
 
 .weather-box {
   display: flex;
-  gap: 3em;
+  gap: 1em;
+}
+
+.description-box h1 {
+  font-size: 1.7em;
 }
 
 .icon-box {
-  height: 100px;
-  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box img {
+  height: 130px;
+  width: 130px;
 }
 
 .description-box {
@@ -122,10 +132,10 @@ section {
 }
 
 section h1 {
-    font-size: 3.5em;
-    color: #fff;
-    min-width: 10em;
-    text-align: center;
+  font-size: 3.5em;
+  color: #fff;
+  min-width: 10em;
+  text-align: center;
 }
 
 .data-box {
@@ -155,36 +165,64 @@ section h1 {
 }
 
 /* animations and media */
-.rainy-cloud-bg {
-    background-image: url('../src/assets/grey-cloud.svg');
-    background-repeat: space no-repeat;
-    background-size: 8em;
-    animation: animatedBackground 10s linear infinite;
+.cloud-bg {
+  background-image: url("../src/assets/grey-cloud.svg");
+  background-repeat: space no-repeat;
+  background-size: 8em;
+  animation: animatedBackground 10s linear infinite;
 }
 
-  @keyframes animatedBackground {
-	0% {
-		background-position: 0% 0%
-	}
-	50% {
-		background-position: 0% 100%
-	}
-	100% {
-		background-position: 0% 0%
-	}
+.snow-bg {
+  background-image: url("../src/assets/snow.svg");
+  background-repeat: space no-repeat;
+  background-size: 8em;
+  animation: animatedBackground 10s linear infinite;
+}
+
+.rain-bg {
+  background-image: url("../src/assets/rain.svg");
+  background-repeat: space no-repeat;
+  background-size: 5em;
+  animation: animatedBackground 10s linear infinite;
+}
+
+.storm-bg {
+  background-image: url("../src/assets/storm.svg");
+  background-repeat: space no-repeat;
+  background-size: 8em;
+  animation: animatedBackground 10s linear infinite;
+}
+
+.clear-bg {
+  background-image: url("../src/assets/clear.svg");
+  background-repeat: space no-repeat;
+  background-size: 12em;
+  animation: animatedBackground 10s linear infinite;
+}
+
+@keyframes animatedBackground {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 0% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
 
 @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
+  0% {
+    background-position: 0% 50%;
   }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 @media only screen and (max-width: 1280px) {
   .data-box {
@@ -207,6 +245,34 @@ section h1 {
 
   section {
     justify-content: flex-start;
+    background-image: linear-gradient(100deg, #8ec5fc 20%, #e0c3fc 100%);
+    background-position: left;
+    background-size: cover;
   }
 
+  section h1 {
+    text-align: start;
+    padding: 0.4em;
+  }
+
+  body {
+    background-color: #8ec5fc;
+    background-image: none;
+  }
+
+  .content-box {
+    animation: none;
+  }
+  .weather-box h1 {
+    font-size: 1.5em;
+  }
+
+  .rainy-cloud-bg {
+    background-repeat: no-repeat;
+    background-size: 9em;
+  }
+
+  .rain-bg {
+    background-size: 8em;
+  }
 }
