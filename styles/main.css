@@ -164,6 +164,16 @@ section h1 {
   width: 4em;
 }
 
+footer {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bolder;
+  color: #000;
+  margin-top: auto;
+  grid-column: 2;
+  grid-row: 2;
+}
+
 /* animations and media */
 .cloud-bg {
   background-image: url("../src/assets/grey-cloud.svg");
