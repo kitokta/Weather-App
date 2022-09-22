@@ -16,13 +16,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../src/assets/grey-cloud.svg */ "./src/assets/grey-cloud.svg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 ___CSS_LOADER_EXPORT___.push([module.id, "@import url(https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap);"]);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: 'Lato', sans-serif;\n}\nbody {\n    display: grid;\n    grid-template-columns: 1fr 5fr;\n    grid-template-rows: 1fr 5fr;\n    background-color: #21D4FD;\n    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);\n    height: 100vh;\n    background-size: 200%;\n    animation: gradient 15s ease infinite;\n}\n\n\nheader {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    grid-column: 2;\n    grid-row: 0/1;\n    font-size: 2.5em;\n    color: #fff;\n}\n\nform {\n    grid-row: 2;\n    grid-column: 1/2;\n    align-self: start;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 1em;\n    width: 90%;\n    justify-self: center;\n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 40%, #E0C3FC 100%);\n    height: 100%;\n    width: 100%;\n    padding: 1em;\n}\n\n#fetch {\n    width: 7.5em;\n    height: 3.3em;\n    padding: 1em;\n    text-align: center;\n    background-color: #0093E9;\n    background-image: linear-gradient(160deg, #0093E9, #80D0C7, #0093E9 );\n    background-size: 250%;\n    background-position: left;\n    transition: 300ms background-position ease-in-out;\n    border: 1px solid #0093E9;\n    border-radius: 18px;\n    color: #fff;\n    font-weight: bolder;\n    font-size: 1em;\n    \n}\n\n#fetch:hover {\n    background-position: right;\n}\n\n#weather-search {\n    border-radius: 10px;\n    height: 3em;\n    width: 100%;\n    padding: 1em;\n    color: black;\n    font-weight: bold;\n    font-size: 1em;\n}\n\n#content-box {\n    padding: 1em;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    grid-row: 1/2;\n    grid-column: 1 / 2;\n    height: 100%;\n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);\n    background-size: 200%;\n    animation: gradient 8s ease infinite;\n}\n\n@keyframes gradient {\n    0%{background-position:0% 50%}\n    50%{background-position:100% 50%}\n    100%{background-position:0% 50%}\n}\n\n\n.weather-box {\n    display: flex;\n    gap: 3em;\n}\n\n.icon-box {\n    height: 100px;\n    width: 100px;\n}\n\n.description-box {\n    display: flex;\n    flex-direction: column;\n}\n\nsection {\n    display: flex;\n    gap: 3em;\n    grid-column: 1 / 2;\n    grid-row: 2;\n}", "",{"version":3,"sources":["webpack://./styles/main.css"],"names":[],"mappings":"AAEA;IACI,SAAS;IACT,UAAU;IACV,sBAAsB;IACtB,+BAA+B;AACnC;AACA;IACI,aAAa;IACb,8BAA8B;IAC9B,2BAA2B;IAC3B,yBAAyB;IACzB,kEAAkE;IAClE,aAAa;IACb,qBAAqB;IACrB,qCAAqC;AACzC;;;AAGA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,cAAc;IACd,aAAa;IACb,gBAAgB;IAChB,WAAW;AACf;;AAEA;IACI,WAAW;IACX,gBAAgB;IAChB,iBAAiB;IACjB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,QAAQ;IACR,UAAU;IACV,oBAAoB;IACpB,yBAAyB;IACzB,mEAAmE;IACnE,YAAY;IACZ,WAAW;IACX,YAAY;AAChB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,YAAY;IACZ,kBAAkB;IAClB,yBAAyB;IACzB,qEAAqE;IACrE,qBAAqB;IACrB,yBAAyB;IACzB,iDAAiD;IACjD,yBAAyB;IACzB,mBAAmB;IACnB,WAAW;IACX,mBAAmB;IACnB,cAAc;;AAElB;;AAEA;IACI,0BAA0B;AAC9B;;AAEA;IACI,mBAAmB;IACnB,WAAW;IACX,WAAW;IACX,YAAY;IACZ,YAAY;IACZ,iBAAiB;IACjB,cAAc;AAClB;;AAEA;IACI,YAAY;IACZ,aAAa;IACb,mBAAmB;IACnB,uBAAuB;IACvB,aAAa;IACb,kBAAkB;IAClB,YAAY;IACZ,yBAAyB;IACzB,kEAAkE;IAClE,qBAAqB;IACrB,oCAAoC;AACxC;;AAEA;IACI,GAAG,0BAA0B;IAC7B,IAAI,4BAA4B;IAChC,KAAK,0BAA0B;AACnC;;;AAGA;IACI,aAAa;IACb,QAAQ;AACZ;;AAEA;IACI,aAAa;IACb,YAAY;AAChB;;AAEA;IACI,aAAa;IACb,sBAAsB;AAC1B;;AAEA;IACI,aAAa;IACb,QAAQ;IACR,kBAAkB;IAClB,WAAW;AACf","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');\n\n* {\n    margin: 0;\n    padding: 0;\n    box-sizing: border-box;\n    font-family: 'Lato', sans-serif;\n}\nbody {\n    display: grid;\n    grid-template-columns: 1fr 5fr;\n    grid-template-rows: 1fr 5fr;\n    background-color: #21D4FD;\n    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);\n    height: 100vh;\n    background-size: 200%;\n    animation: gradient 15s ease infinite;\n}\n\n\nheader {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    grid-column: 2;\n    grid-row: 0/1;\n    font-size: 2.5em;\n    color: #fff;\n}\n\nform {\n    grid-row: 2;\n    grid-column: 1/2;\n    align-self: start;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 1em;\n    width: 90%;\n    justify-self: center;\n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 40%, #E0C3FC 100%);\n    height: 100%;\n    width: 100%;\n    padding: 1em;\n}\n\n#fetch {\n    width: 7.5em;\n    height: 3.3em;\n    padding: 1em;\n    text-align: center;\n    background-color: #0093E9;\n    background-image: linear-gradient(160deg, #0093E9, #80D0C7, #0093E9 );\n    background-size: 250%;\n    background-position: left;\n    transition: 300ms background-position ease-in-out;\n    border: 1px solid #0093E9;\n    border-radius: 18px;\n    color: #fff;\n    font-weight: bolder;\n    font-size: 1em;\n    \n}\n\n#fetch:hover {\n    background-position: right;\n}\n\n#weather-search {\n    border-radius: 10px;\n    height: 3em;\n    width: 100%;\n    padding: 1em;\n    color: black;\n    font-weight: bold;\n    font-size: 1em;\n}\n\n#content-box {\n    padding: 1em;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    grid-row: 1/2;\n    grid-column: 1 / 2;\n    height: 100%;\n    background-color: #8EC5FC;\n    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);\n    background-size: 200%;\n    animation: gradient 8s ease infinite;\n}\n\n@keyframes gradient {\n    0%{background-position:0% 50%}\n    50%{background-position:100% 50%}\n    100%{background-position:0% 50%}\n}\n\n\n.weather-box {\n    display: flex;\n    gap: 3em;\n}\n\n.icon-box {\n    height: 100px;\n    width: 100px;\n}\n\n.description-box {\n    display: flex;\n    flex-direction: column;\n}\n\nsection {\n    display: flex;\n    gap: 3em;\n    grid-column: 1 / 2;\n    grid-row: 2;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif;\n}\nbody {\n  display: grid;\n  grid-template-columns: 1fr 5fr;\n  grid-template-rows: 1fr 5fr;\n  background-color: #21d4fd;\n  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);\n  height: 100vh;\n  background-size: 200%;\n  animation: gradient 15s ease infinite;\n}\n\nheader {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  grid-column: 2;\n  grid-row: 0/1;\n  font-size: 2.5em;\n  color: #fff;\n  width: 100%;\n  height: 100%;\n}\n\nform {\n  grid-row: 2;\n  grid-column: 1/2;\n  align-self: start;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 1em;\n  width: 22em;\n  justify-self: center;\n  background-color: #8ec5fc;\n  background-image: linear-gradient(62deg, #8ec5fc 40%, #e0c3fc 100%);\n  height: 100%;\n  width: 100%;\n  padding: 1em;\n}\n\n#fetch {\n  width: 7.5em;\n  height: 3.3em;\n  padding: 1em;\n  text-align: center;\n  background-color: #0093e9;\n  background-image: linear-gradient(160deg, #0093e9, #80d0c7, #0093e9);\n  background-size: 250%;\n  background-position: left;\n  transition: 300ms background-position ease-in-out;\n  border: 1px solid #0093e9;\n  border-radius: 18px;\n  color: #fff;\n  font-weight: bolder;\n  font-size: 1em;\n}\n\n#fetch:hover {\n  background-position: right;\n}\n\n#weather-search {\n  border-radius: 10px;\n  height: 3em;\n  width: 100%;\n  padding: 1em;\n  color: black;\n  font-weight: bold;\n  font-size: 1em;\n}\n\n#content-box {\n  padding: 1em;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  grid-row: 1/2;\n  grid-column: 1 / 2;\n  min-height: 15em;\n  max-height: 15em;\n  width: 22em;\n  background-color: #8ec5fc;\n  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);\n  background-size: 200%;\n  animation: gradient 8s ease infinite;\n}\n\n.weather-box {\n  display: flex;\n  gap: 3em;\n}\n\n.icon-box {\n  height: 100px;\n  width: 100px;\n}\n\n.description-box {\n  display: flex;\n  flex-direction: column;\n}\n\nsection {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  gap: 3em;\n  grid-column: 2;\n  grid-row: 2;\n  justify-content: center;\n}\n\n.data-box {\n  padding: 1.2em;\n  height: 25%;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 12em;\n}\n\n#sensation-div,\n#humidity-div,\n#wind-div {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  height: 5em;\n  width: 10em;\n}\n\n.data-box img {\n  height: 4em;\n  width: 4em;\n}\n\n/* animations and media */\n.rainy-cloud-bg {\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-repeat: space no-repeat;\n    background-size: 8em;\n    animation: animatedBackground 10s linear infinite;\n}\n\n  @keyframes animatedBackground {\n\t0% {\n\t\tbackground-position: 0% 0%\n\t}\n\t50% {\n\t\tbackground-position: 0% 100%\n\t}\n\t100% {\n\t\tbackground-position: 0% 0%\n\t}\n}\n\n@keyframes gradient {\n    0% {\n      background-position: 0% 50%;\n    }\n    50% {\n      background-position: 100% 50%;\n    }\n    100% {\n      background-position: 0% 50%;\n    }\n  }\n\n@media only screen and (max-width: 1280px) {\n  .data-box {\n    flex-direction: column;\n    gap: 5em;\n    justify-content: flex-start;\n    align-items: flex-start;\n  }\n\n  #sensation-div,\n  #humidity-div,\n  #wind-div {\n    flex-direction: row;\n    gap: 1.2em;\n    width: 15em;\n    justify-content: flex-start;\n    align-items: flex-start;\n    height: 20em;\n  }\n\n  section {\n    justify-content: flex-start;\n  }\n\n}\n", "",{"version":3,"sources":["webpack://./styles/main.css"],"names":[],"mappings":"AAEA;EACE,SAAS;EACT,UAAU;EACV,sBAAsB;EACtB,+BAA+B;AACjC;AACA;EACE,aAAa;EACb,8BAA8B;EAC9B,2BAA2B;EAC3B,yBAAyB;EACzB,kEAAkE;EAClE,aAAa;EACb,qBAAqB;EACrB,qCAAqC;AACvC;;AAEA;EACE,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,cAAc;EACd,aAAa;EACb,gBAAgB;EAChB,WAAW;EACX,WAAW;EACX,YAAY;AACd;;AAEA;EACE,WAAW;EACX,gBAAgB;EAChB,iBAAiB;EACjB,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,QAAQ;EACR,WAAW;EACX,oBAAoB;EACpB,yBAAyB;EACzB,mEAAmE;EACnE,YAAY;EACZ,WAAW;EACX,YAAY;AACd;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,YAAY;EACZ,kBAAkB;EAClB,yBAAyB;EACzB,oEAAoE;EACpE,qBAAqB;EACrB,yBAAyB;EACzB,iDAAiD;EACjD,yBAAyB;EACzB,mBAAmB;EACnB,WAAW;EACX,mBAAmB;EACnB,cAAc;AAChB;;AAEA;EACE,0BAA0B;AAC5B;;AAEA;EACE,mBAAmB;EACnB,WAAW;EACX,WAAW;EACX,YAAY;EACZ,YAAY;EACZ,iBAAiB;EACjB,cAAc;AAChB;;AAEA;EACE,YAAY;EACZ,aAAa;EACb,mBAAmB;EACnB,uBAAuB;EACvB,aAAa;EACb,kBAAkB;EAClB,gBAAgB;EAChB,gBAAgB;EAChB,WAAW;EACX,yBAAyB;EACzB,kEAAkE;EAClE,qBAAqB;EACrB,oCAAoC;AACtC;;AAEA;EACE,aAAa;EACb,QAAQ;AACV;;AAEA;EACE,aAAa;EACb,YAAY;AACd;;AAEA;EACE,aAAa;EACb,sBAAsB;AACxB;;AAEA;EACE,YAAY;EACZ,WAAW;EACX,aAAa;EACb,QAAQ;EACR,cAAc;EACd,WAAW;EACX,uBAAuB;AACzB;;AAEA;EACE,cAAc;EACd,WAAW;EACX,WAAW;EACX,aAAa;EACb,uBAAuB;EACvB,mBAAmB;EACnB,SAAS;AACX;;AAEA;;;EAGE,aAAa;EACb,sBAAsB;EACtB,mBAAmB;EACnB,uBAAuB;EACvB,WAAW;EACX,WAAW;AACb;;AAEA;EACE,WAAW;EACX,UAAU;AACZ;;AAEA,yBAAyB;AACzB;IACI,yDAAqD;IACrD,kCAAkC;IAClC,oBAAoB;IACpB,iDAAiD;AACrD;;EAEE;CACD;EACC;CACD;CACA;EACC;CACD;CACA;EACC;CACD;AACD;;AAEA;IACI;MACE,2BAA2B;IAC7B;IACA;MACE,6BAA6B;IAC/B;IACA;MACE,2BAA2B;IAC7B;EACF;;AAEF;EACE;IACE,sBAAsB;IACtB,QAAQ;IACR,2BAA2B;IAC3B,uBAAuB;EACzB;;EAEA;;;IAGE,mBAAmB;IACnB,UAAU;IACV,WAAW;IACX,2BAA2B;IAC3B,uBAAuB;IACvB,YAAY;EACd;;EAEA;IACE,2BAA2B;EAC7B;;AAEF","sourcesContent":["@import url(\"https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap\");\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: \"Lato\", sans-serif;\n}\nbody {\n  display: grid;\n  grid-template-columns: 1fr 5fr;\n  grid-template-rows: 1fr 5fr;\n  background-color: #21d4fd;\n  background-image: linear-gradient(19deg, #21d4fd 0%, #b721ff 100%);\n  height: 100vh;\n  background-size: 200%;\n  animation: gradient 15s ease infinite;\n}\n\nheader {\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  grid-column: 2;\n  grid-row: 0/1;\n  font-size: 2.5em;\n  color: #fff;\n  width: 100%;\n  height: 100%;\n}\n\nform {\n  grid-row: 2;\n  grid-column: 1/2;\n  align-self: start;\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 1em;\n  width: 22em;\n  justify-self: center;\n  background-color: #8ec5fc;\n  background-image: linear-gradient(62deg, #8ec5fc 40%, #e0c3fc 100%);\n  height: 100%;\n  width: 100%;\n  padding: 1em;\n}\n\n#fetch {\n  width: 7.5em;\n  height: 3.3em;\n  padding: 1em;\n  text-align: center;\n  background-color: #0093e9;\n  background-image: linear-gradient(160deg, #0093e9, #80d0c7, #0093e9);\n  background-size: 250%;\n  background-position: left;\n  transition: 300ms background-position ease-in-out;\n  border: 1px solid #0093e9;\n  border-radius: 18px;\n  color: #fff;\n  font-weight: bolder;\n  font-size: 1em;\n}\n\n#fetch:hover {\n  background-position: right;\n}\n\n#weather-search {\n  border-radius: 10px;\n  height: 3em;\n  width: 100%;\n  padding: 1em;\n  color: black;\n  font-weight: bold;\n  font-size: 1em;\n}\n\n#content-box {\n  padding: 1em;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  grid-row: 1/2;\n  grid-column: 1 / 2;\n  min-height: 15em;\n  max-height: 15em;\n  width: 22em;\n  background-color: #8ec5fc;\n  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);\n  background-size: 200%;\n  animation: gradient 8s ease infinite;\n}\n\n.weather-box {\n  display: flex;\n  gap: 3em;\n}\n\n.icon-box {\n  height: 100px;\n  width: 100px;\n}\n\n.description-box {\n  display: flex;\n  flex-direction: column;\n}\n\nsection {\n  height: 100%;\n  width: 100%;\n  display: flex;\n  gap: 3em;\n  grid-column: 2;\n  grid-row: 2;\n  justify-content: center;\n}\n\n.data-box {\n  padding: 1.2em;\n  height: 25%;\n  width: 100%;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n  gap: 12em;\n}\n\n#sensation-div,\n#humidity-div,\n#wind-div {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n  height: 5em;\n  width: 10em;\n}\n\n.data-box img {\n  height: 4em;\n  width: 4em;\n}\n\n/* animations and media */\n.rainy-cloud-bg {\n    background-image: url('../src/assets/grey-cloud.svg');\n    background-repeat: space no-repeat;\n    background-size: 8em;\n    animation: animatedBackground 10s linear infinite;\n}\n\n  @keyframes animatedBackground {\n\t0% {\n\t\tbackground-position: 0% 0%\n\t}\n\t50% {\n\t\tbackground-position: 0% 100%\n\t}\n\t100% {\n\t\tbackground-position: 0% 0%\n\t}\n}\n\n@keyframes gradient {\n    0% {\n      background-position: 0% 50%;\n    }\n    50% {\n      background-position: 100% 50%;\n    }\n    100% {\n      background-position: 0% 50%;\n    }\n  }\n\n@media only screen and (max-width: 1280px) {\n  .data-box {\n    flex-direction: column;\n    gap: 5em;\n    justify-content: flex-start;\n    align-items: flex-start;\n  }\n\n  #sensation-div,\n  #humidity-div,\n  #wind-div {\n    flex-direction: row;\n    gap: 1.2em;\n    width: 15em;\n    justify-content: flex-start;\n    align-items: flex-start;\n    height: 20em;\n  }\n\n  section {\n    justify-content: flex-start;\n  }\n\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -136,6 +141,44 @@ module.exports = function (cssWithMappingToString) {
   };
 
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+
+  if (!url) {
+    return url;
+  }
+
+  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
+
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
 };
 
 /***/ }),
@@ -541,7 +584,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ UI)
 /* harmony export */ });
-/* harmony import */ var _assets_free_icon_1_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/free_icon_1.svg */ "./src/assets/free_icon_1.svg");
+/* harmony import */ var _assets_sensation_svg__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../assets/sensation.svg */ "./src/assets/sensation.svg");
 /* harmony import */ var _assets_humidity_svg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../assets/humidity.svg */ "./src/assets/humidity.svg");
 /* harmony import */ var _assets_wind_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../assets/wind.svg */ "./src/assets/wind.svg");
 
@@ -551,10 +594,11 @@ __webpack_require__.r(__webpack_exports__);
 class UI {
     static loadData(todayWeather) {
         const contentBox = document.getElementById("content-box");
+        //testing element to delete
         if (document.getElementById("old-weather")) {
-          const oldWeather = document.getElementById("old-weather");
-          contentBox.removeChild(oldWeather);
+          this.deleteData('oldWeather');
         }
+
         const weatherBox = document.createElement("div");
         weatherBox.classList.add("weather-box");
         weatherBox.setAttribute("id", "old-weather");
@@ -584,17 +628,42 @@ class UI {
         descriptionBox.appendChild(tempMin);
         descriptionBox.appendChild(tempMax);
       
+
+        //testing section elements to delete
+        if(document.getElementById('wind-data') || document.getElementById('sensation-data') || document.getElementById('humidity-data') ) {
+            this.deleteData('section');
+        }
+
+        //section
+        //wind
+        const windDiv = document.getElementById('wind-div');
+        const windData = document.createElement('h2');
+        windData.setAttribute('id', 'wind-data');
+        windData.innerHTML = `${(todayWeather.Vento).toFixed(2)} Km/h`;
+        windDiv.appendChild(windData);
+
+        //sensation
+        const sensationDiv = document.getElementById('sensation-div');
+        const sensationData = document.createElement('h2');
+        sensationData.setAttribute('id', 'sensation-data');
+        sensationData.innerHTML = `${todayWeather.Sensacao} °C`;
+        sensationDiv.appendChild(sensationData);
+
+        //humidity
+        const humidityDiv = document.getElementById('humidity-div');
+        const humidityData = document.createElement('h2');
+        humidityData.setAttribute('id', 'humidity-data');
+        humidityData.innerHTML = `${todayWeather.Umidade} kg/m³`;
+        humidityDiv.appendChild(humidityData);
+
         //appending everything
         weatherBox.appendChild(iconBox);
         weatherBox.appendChild(descriptionBox);
         contentBox.appendChild(weatherBox);
 
-        //header
-        const header = document.getElementsByTagName("header")[0];
-        header.innerHTML = `${todayWeather.Nome} - ${todayWeather.Pais}`;
-
-        
-
+        //title
+        const title = document.getElementById("title");
+        title.innerHTML = `${todayWeather.Nome} - ${todayWeather.Pais}`;
       }
       
       static defaultLoad() {
@@ -602,33 +671,53 @@ class UI {
         if(contentBox.innerHTML!= '') {
           contentBox.removeChild(contentBox.firstChild);
         }
-        const icon = document.createElement("img");
-        icon.setAttribute("id", "firstIcon");
-        icon.src = "https://openweathermap.org/img/wn/02d@2x.png";
-        icon.style.height = "8em";
-        icon.style.width = "8em";
-        contentBox.appendChild(icon);
 
         //section content
         const section = document.getElementsByTagName('section')[0];
+        if(section.innerHTML!='') {
+          section.removeChild(section.firstChild);
+        }
         const dataBox = document.createElement('div');
         dataBox.classList.add('data-box');
         section.appendChild(dataBox);
         const windIcon = document.createElement('img');
         const humidityIcon = document.createElement('img');
         const sensationIcon = document.createElement('img');
-        sensationIcon.src = _assets_free_icon_1_svg__WEBPACK_IMPORTED_MODULE_0__;
+        sensationIcon.src = _assets_sensation_svg__WEBPACK_IMPORTED_MODULE_0__;
         humidityIcon.src = _assets_humidity_svg__WEBPACK_IMPORTED_MODULE_1__;
         windIcon.src = _assets_wind_svg__WEBPACK_IMPORTED_MODULE_2__;
         const sensationDiv = document.createElement('div');
+        sensationDiv.setAttribute('id', 'sensation-div');
         const humidityDiv = document.createElement('div');
+        humidityDiv.setAttribute('id', 'humidity-div');
         const windDiv = document.createElement('div');
+        windDiv.setAttribute('id', 'wind-div');
         sensationDiv.appendChild(sensationIcon);
         humidityDiv.appendChild(humidityIcon);
         windDiv.appendChild(windIcon);
         dataBox.appendChild(sensationDiv);
         dataBox.appendChild(humidityDiv);
         dataBox.appendChild(windDiv);
+      }
+
+      static deleteData(toDelete) {
+        if(toDelete === 'section') {
+          const sensationDelete = document.getElementById('sensation-data');
+          const sensationDiv = document.getElementById('sensation-div');
+          sensationDiv.removeChild(sensationDelete);
+          const humidityDelete = document.getElementById('humidity-data');
+          const humidityDiv = document.getElementById('humidity-div');
+          humidityDiv.removeChild(humidityDelete);
+          const windDelete = document.getElementById('wind-data');
+          const windDiv = document.getElementById('wind-div');
+          windDiv.removeChild(windDelete);
+        }
+
+        else if(toDelete === 'oldWeather') {
+          const oldWeather = document.getElementById("old-weather");
+          const contentBox = document.getElementById("content-box");
+          contentBox.removeChild(oldWeather);
+        }
       }
 }
 
@@ -652,7 +741,7 @@ class Weather {
         this.Sensacao = feelsLike;
         this.TempMin = tempMin;
         this.TempMax = tempMax;
-        this.Humidade = humidity;
+        this.Umidade = humidity;
         this.Vento = wind * 3.6;
         this.Descricao = description;
         this.Icon = icon;
@@ -661,13 +750,13 @@ class Weather {
 
 /***/ }),
 
-/***/ "./src/assets/free_icon_1.svg":
-/*!************************************!*\
-  !*** ./src/assets/free_icon_1.svg ***!
-  \************************************/
+/***/ "./src/assets/grey-cloud.svg":
+/*!***********************************!*\
+  !*** ./src/assets/grey-cloud.svg ***!
+  \***********************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-module.exports = __webpack_require__.p + "free_icon_1.svg";
+module.exports = __webpack_require__.p + "grey-cloud.svg";
 
 /***/ }),
 
@@ -678,6 +767,16 @@ module.exports = __webpack_require__.p + "free_icon_1.svg";
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 module.exports = __webpack_require__.p + "humidity.svg";
+
+/***/ }),
+
+/***/ "./src/assets/sensation.svg":
+/*!**********************************!*\
+  !*** ./src/assets/sensation.svg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "sensation.svg";
 
 /***/ }),
 
@@ -716,6 +815,9 @@ module.exports = __webpack_require__.p + "wind.svg";
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
 /******/ 	}
+/******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
 /******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
@@ -790,6 +892,32 @@ module.exports = __webpack_require__.p + "wind.svg";
 /******/ 		__webpack_require__.p = scriptUrl;
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -815,6 +943,10 @@ const toSearch = document.getElementById("weather-search");
 
 window.addEventListener("load", () => {
   _modules_UI_js__WEBPACK_IMPORTED_MODULE_2__["default"].defaultLoad();
+  getData('brasilia').then((res) => {
+    const todayWeather = res;
+    _modules_UI_js__WEBPACK_IMPORTED_MODULE_2__["default"].loadData(todayWeather);
+  });
 });
 
 button.addEventListener("click", (e) => {
