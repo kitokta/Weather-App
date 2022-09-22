@@ -7,8 +7,7 @@ export default class UI {
         const contentBox = document.getElementById("content-box");
         //testing element to delete
         if (document.getElementById("old-weather")) {
-          const oldWeather = document.getElementById("old-weather");
-          contentBox.removeChild(oldWeather);
+          this.deleteData('oldWeather');
         }
 
         const weatherBox = document.createElement("div");
@@ -43,15 +42,7 @@ export default class UI {
 
         //testing section elements to delete
         if(document.getElementById('wind-data') || document.getElementById('sensation-data') || document.getElementById('humidity-data') ) {
-          const sensationDelete = document.getElementById('sensation-data');
-          const sensationDiv = document.getElementById('sensation-div');
-          sensationDiv.removeChild(sensationDelete);
-          const humidityDelete = document.getElementById('humidity-data');
-          const humidityDiv = document.getElementById('humidity-div');
-          humidityDiv.removeChild(humidityDelete);
-          const windDelete = document.getElementById('wind-data');
-          const windDiv = document.getElementById('wind-div');
-          windDiv.removeChild(windDelete);
+            this.deleteData('section');
         }
 
         //section
@@ -81,12 +72,9 @@ export default class UI {
         weatherBox.appendChild(descriptionBox);
         contentBox.appendChild(weatherBox);
 
-        //header
-        const header = document.getElementsByTagName("header")[0];
-        header.innerHTML = `${todayWeather.Nome} - ${todayWeather.Pais}`;
-
-        
-
+        //title
+        const title = document.getElementById("title");
+        title.innerHTML = `${todayWeather.Nome} - ${todayWeather.Pais}`;
       }
       
       static defaultLoad() {
@@ -121,5 +109,25 @@ export default class UI {
         dataBox.appendChild(sensationDiv);
         dataBox.appendChild(humidityDiv);
         dataBox.appendChild(windDiv);
+      }
+
+      static deleteData(toDelete) {
+        if(toDelete === 'section') {
+          const sensationDelete = document.getElementById('sensation-data');
+          const sensationDiv = document.getElementById('sensation-div');
+          sensationDiv.removeChild(sensationDelete);
+          const humidityDelete = document.getElementById('humidity-data');
+          const humidityDiv = document.getElementById('humidity-div');
+          humidityDiv.removeChild(humidityDelete);
+          const windDelete = document.getElementById('wind-data');
+          const windDiv = document.getElementById('wind-div');
+          windDiv.removeChild(windDelete);
+        }
+
+        else if(toDelete === 'oldWeather') {
+          const oldWeather = document.getElementById("old-weather");
+          const contentBox = document.getElementById("content-box");
+          contentBox.removeChild(oldWeather);
+        }
       }
 }
