@@ -66,12 +66,11 @@ async function getData(location) {
   }
 
     setTimeout(() => {
-      setTimeout(() => {
         getData("brasilia").then((res) => {
           const todayWeather = res;
           UI.loadData(todayWeather);
         });
-      }, 1);
+      
       UI.deleteData("err");
       UI.defaultLoad();
     }, 1100);
