@@ -31,7 +31,7 @@ button.addEventListener("click", (e) => {
 async function getData(location) {
   try {
     const response = await fetch(
-      `http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=fe021bc1d73bb3f7426ae51b83d8daff&lang=pt_br&units=metric`,
+      `https://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=fe021bc1d73bb3f7426ae51b83d8daff&lang=pt_br&units=metric`,
       { mode: "cors" }
     );
 
