@@ -55,22 +55,22 @@ async function getData(location) {
     console.log(todayWeather);
     return todayWeather;
   } catch {
-    if(!document.getElementById('err')) {
-    const err = document.createElement("h1");
-    err.style.color = "red";
-    err.innerHTML = "Erro ao procurar cidade";
-    err.style.marginBottom = "100px";
-    err.setAttribute("id", "err");
-    const form = document.getElementById("form");
-    form.appendChild(err);
-  }
+    if (!document.getElementById("err")) {
+      const err = document.createElement("h1");
+      err.style.color = "red";
+      err.innerHTML = "Erro ao procurar cidade";
+      err.style.marginBottom = "100px";
+      err.setAttribute("id", "err");
+      const form = document.getElementById("form");
+      form.appendChild(err);
+    }
 
     setTimeout(() => {
-        getData("brasilia").then((res) => {
-          const todayWeather = res;
-          UI.loadData(todayWeather);
-        });
-      
+      getData("brasilia").then((res) => {
+        const todayWeather = res;
+        UI.loadData(todayWeather);
+      });
+
       UI.deleteData("err");
       UI.defaultLoad();
     }, 1100);
